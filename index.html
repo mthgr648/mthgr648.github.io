@@ -8,9 +8,10 @@
     <style>
         /* Estilos para links */
         a {
-            font-size: 14px;
+            font-size: 16px;
             color: yellow;
             text-decoration: none;
+            padding: 10px;
         }
 
         a:hover {
@@ -60,6 +61,9 @@
             color: white;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         /* Parágrafos */
@@ -75,6 +79,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            flex: 1;
             padding: 20px;
         }
 
@@ -94,45 +99,30 @@
             background-color: #333;
             padding: 20px;
             text-align: center;
-            position: relative;
-        }
-
-        footer table {
-            width: 60%;
-            margin: 0 auto;
-            border: 1px solid white;
-        }
-
-        /* Links no rodapé */
-        .footer-links {
-            position: fixed;
             width: 100%;
-            bottom: 10px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* Flexbox para distribuir links no rodapé */
+        .footer-links {
             display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            max-width: 800px; /* Controla a largura máxima */
+            margin: 0 auto;
         }
 
         .footer-links a {
-            color: white;
             font-size: 16px;
+            color: white;
+            text-align: center;
         }
 
-        /* Posicionamento dos links */
-        .left {
-            position: absolute;
-            left: 10px;
-        }
-
-        .center {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .right {
-            position: absolute;
-            right: 10px;
+        /* Estilo para os links do rodapé */
+        .footer-links a:hover {
+            color: red;
         }
 
     </style>
@@ -148,103 +138,3 @@
         <div class="img-container">
             <img src="ratasso.jpeg" alt="Mr. Boombastic">
         </div>
-
-        <!-- Letras da música -->
-        <p>What you want is some boombastic romantic</p>
-        <p>Fantastic lover, Shaggy</p>
-        <p>Mr. Lover Lover, Mmm, Mr. Lover lover, heh girl</p>
-        <p>Mr. Lover lover, Mmm, Mr. Lover lover</p>
-
-        <p>She call me Mr. Boombastic</p>
-        <p>Say me fantastic, touch me on the back</p>
-        <p>She says I'm Mr. Romantic, say me fantastic</p>
-        <p>Touch me on the back, she says I'm Mr. Romantic</p>
-
-        <p>Smooth, just like the silk</p>
-        <p>Soft and cuddly, hug me up like a quilt</p>
-        <p>I'm a lyrical lover, no take me for no filth</p>
-        <p>With my sexual physique, jah know me well-built</p>
-        <p>Oh me oh my, well well, can't you tell</p>
-
-        <p>I'm just like a turtle crawling out of me shell</p>
-        <p>Gal you captivate my body, put me under a spell</p>
-        <p>With your Khus Khus perfume, I love your sweet smell</p>
-
-        <p>You are the only young girl who can ring my bell</p>
-        <p>And I could take rejection, so you tell me go to hell</p>
-
-        <!-- Refrão -->
-        <p>I'm Boombastic</p>
-        <p>Tell me fantastic, touch me on the back</p>
-        <p>She says I'm Mr. Romantic, and me fantastic</p>
-        <p>She touch me on the back, she says I'm Mr. Boom, boom, boom</p>
-
-        <p>-Bastic</p>
-
-        <p>Gee wheeze, baby please</p>
-        <p>Let me take you to an island of the sweet cool breeze</p>
-        <p>You don't feel like drive, well baby hand me the keys</p>
-        <p>And I will take you to a place to set your mind at ease</p>
-
-        <p>Don't you tickle my foot bottom, ha ha, baby please</p>
-        <p>Don't you play with my nose 'cause I might ha-choo sneeze</p>
-
-        <p>(Bless you)</p>
-        <p>Well, you are the bun and me a cheese</p>
-
-        <p>And if me a the rice, well maybe you are the peas</p>
-
-        <p>I'm Boombastic</p>
-        <p>Tell me fantastic, touch me on me back</p>
-        <p>She says I'm Mr. Romantic, and me fantastic</p>
-        <p>She touch me on the back, she says I'm Mr. Boom, boom, boom</p>
-
-        <p>-Bastic</p>
-
-        <p>Give me your loving, gal, your loving well good</p>
-        <p>I want your loving, gal, you need like you should</p>
-
-        <p>Would you like to kiss and caress</p>
-        <p>Rub down every strand of hair on my chest</p>
-
-        <p>I'm boombastic</p>
-        <p>Rates the best, the best you should get</p>
-
-        <p>Nothing more, nothing less</p>
-        <p>Give me your digits, jot down your address</p>
-
-        <p>I'll bet you confess when you put me to the test</p>
-
-        <p>That I'm Boombastic</p>
-        <p>Tell me fantastic, touch me on me back</p>
-        <p>She says I'm Mr. Romantic, tell me fantastic</p>
-        <p>She touch me on the back, she says I'm Mr. Boom, boom</p>
-
-        <p>-Bastic</p>
-
-        <p>Gal, your admiration it's a-licked me from the start</p>
-        <p>With some physical attraction, gal, you know to feel the spark</p>
-
-        <p>I want a few words, not gah tell you no sweet talk</p>
-
-        <p>I'll get straight to the point</p>
-        <p>Like an arrow arrow dart</p>
-
-        <p>Come lay down in my jacuzzi and get some bubble bath</p>
-
-        <p>Only sound you will hear is the beating of my heart</p>
-
-        <p>And we will hm hm, and have some sweet pillow talk</p>
-
-        <!-- Rodapé com links -->
-        <footer>
-            <div class="footer-links">
-                <a href="https://www.youtube.com/watch?v=GoaIaloISgs&list=RDGoaIaloISgs&start_radio=1" class="left">Mc Ratão</a>
-                <a href="https://cobasiblog.blob.core.windows.net/production-ofc/2021/08/qual-a-diferenca-entre-rato-e-ratazana-meio.png" class="center">RATASSO</a>
-                <a href="https://uploads.jovemnerd.com.br/wp-content/uploads/2020/02/meme-dorime-o-que-e.jpg" class="right">DORIME</a>
-            </div>
-        </footer>
-
-</body>
-
-</html>
