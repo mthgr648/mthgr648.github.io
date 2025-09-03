@@ -94,6 +94,7 @@
             background-color: #333;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
 
         footer table {
@@ -101,6 +102,31 @@
             margin: 0 auto;
             border: 1px solid white;
         }
+
+        /* Links no rodapé */
+        .footer-links {
+            position: absolute;
+            width: 100%;
+            top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-links a {
+            color: white;
+            font-size: 16px;
+        }
+
+        .footer-links .center {
+            text-align: center;
+            flex: 1;
+        }
+
+        .footer-links .left,
+        .footer-links .right {
+            width: 30%;
+        }
+
     </style>
 </head>
 
@@ -202,23 +228,9 @@
 
         <p>And we will hm hm, and have some sweet pillow talk</p>
 
-        <!-- Rodapé com tabela -->
+        <!-- Rodapé com links -->
         <footer>
-            <table>
-                <tr>
-                    <th>Cantor</th>
-                    <th>Personagem</th>
-                    <th>Agência</th>
-                </tr>
-                <tr>
-                    <td>Shaggy</td>
-                    <td>Mr. Boombastic</td>
-                    <td>Virgin Records</td>
-                </tr>
-            </table>
-        </footer>
-    </div>
-
-</body>
-
-</html>
+            <div class="footer-links">
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fjovemnerd.com.br%2Fnoticias%2Fetc%2Fo-que-e-dorime&psig=AOvVaw1wNX93IU8dSka7TdqKUNUn&ust=1756992646942000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjMzebZvI8DFQAAAAAdAAAAABAE" class="left">Link 1</a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.cobasi.com.br%2Fqual-a-diferenca-entre-rato-e-ratazana%2F&psig=AOvVaw1z2ZMajXU3IsnrqaXXuno4&ust=1756992598483000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCJr-DZvI8DFQAAAAAdAAAAABAE" class="right">Link 2</a>
+                <a href
