@@ -98,16 +98,17 @@
         footer {
             background-color: #333;
             padding: 20px;
-            text-align: center;
+            text-align: left;
             width: 100%;
-            position: relative;
+            position: fixed;
+            bottom: 0;
             box-sizing: border-box;
         }
 
         /* Flexbox para distribuir links no rodapé */
         .footer-links {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start; /* Alinha à esquerda */
             align-items: center;
             width: 100%;
             max-width: 800px; /* Controla a largura máxima */
@@ -118,6 +119,7 @@
             font-size: 16px;
             color: white;
             text-align: center;
+            margin-right: 15px; /* Espaço entre os links */
         }
 
         /* Estilo para os links do rodapé */
